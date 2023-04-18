@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app
+{
+    background-color: #0b2434;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* | BEST | */
+.best
+{
+    position: absolute;
+    top: 20px;
+    font-family: Tahoma;
+    color: yellow;
+    font-size: 3rem;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@keyframes blink
+{
+    0% {transform: scale(1);}
+    50% {transform: scale(0.95);}
+    /* 100% {transform: scale(1);} */
+}
+/* | MAIN | */
+.main
+{
+    background-color: rgb(245, 245, 245);
+    border-radius: 5%;
+    padding: 30px 10px;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 0 15px 0px #c2c2c269;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+/* | Text | */
+.title
+{
+    font-family: 'Karla';
+    color: #2B283A;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.instruction
+{
+    font-family: 'Inter';
+    color: #4A4E74;
+    font-size: 1.2rem;
+    text-align: center;
+}
+/* | DIE | */
+.die__block
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    width: 425px;
+}
+.die
+{
+    text-align: center;
+    font-family: 'Karla';
+    font-weight: 700;
+    background-color: white;
+    color: #2B283A;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.die:hover
+{
+    background-color: whitesmoke;
+}
+.die__held
+{
+    background-color: #59E391;
+}
+.die__held:hover
+{
+    background-color: #4ec87f;
+}
+/* | REROLL | */
+.reroll
+{
+    width: 140px;
+    height: 55px;
+    border-radius: 20px;
+    background: #5035FF;
+    box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+    border: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: "Karla",sans-serif;
+    color: white;
+    cursor: pointer;
+}
+.reroll:hover
+{
+    background: #9035ff;
+    transition-duration: 0.1s;
+}
+.reroll:active
+{
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.483);
+    background: #9035ff;
+}
+/* | SCORE */
+.score
+{
+    margin-top: 0.4rem;
+    font-family: "Inter",sans-serif;
+    font-size: 1.5rem;
+    color: purple;
+}
